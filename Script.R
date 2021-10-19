@@ -8,8 +8,8 @@ str(mtcars_num)
 mtcars_num_sc <- scale(mtcars_num)
 str(mtcars_num_sc)
 
-km.out2 = kmeans(mtcars_num_sc,centers=2,nstart =20) 
-km.out2$cluster
+km.out3 = kmeans(mtcars_num_sc,centers=3,nstart =20) 
+km.out3$cluster
 
 library(factoextra)
-fviz_cluster(km.out2, mtcars_num_sc, ellipse.type = "norm") 
+fviz_cluster(km.out3, mtcars_num_sc, ellipse.type = "norm") 
