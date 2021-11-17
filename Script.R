@@ -13,3 +13,6 @@ km.out3$cluster
 
 library(factoextra)
 fviz_cluster(km.out3, mtcars_num_sc, ellipse.type = "norm") 
+table(km.out3$cluster)
+
+#test commentaire
